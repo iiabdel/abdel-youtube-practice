@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body{
+  margin: 0px;
+  padding-bottom: 1000px;
+  padding-top: 90px;
+  padding-left: 90px;
+  padding-right: 24px;
+  background-color: #f9f9f9
+}
+
+p{
+  font-family: 'Roboto', sans-serif; 
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.videos-grid{
+  display: grid;
+  grid-template-columns:1fr 1fr 1fr;
+  column-gap: 15px;
+  row-gap: 15px;
+}
+
+@media (max-width: 1000px){
+ .videos-grid{
+  grid-template-columns:1fr 1fr ;
+ }
+}
+
+@media (max-width: 730px){
+  .videos-grid{
+   grid-template-columns:1fr;
+  }
+}
+@media (min-width: 1500px){
+  .videos-grid{
+   grid-template-columns:1fr 1fr 1fr 1fr;
+   
+  }
+  
+}
+.thumbnail{
+
+ width: 100%;
+}
+
+
+.searchbar{
+  display: block;
+}
+
+.thumbnailrow{
+  position: relative;
+}
+.video-time{
+  position: absolute;
+  bottom: 7px;
+  right: 4px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.9);
+  font-size: 12px;
+  padding: 2px 4px;
+  border-radius: 2px;
+  font-weight: bold;
+  font-family: 'roboto';
+}
+.video-info-grid{
+display: grid;
+grid-template-columns: 50px 1fr;
+}
+.channelpicture{
+  width: 30px;
+  position: relative;
+}
+.videoinfo{
+  width: 250px;
+}
+.profilepicture{
+  width: 40px;
+  border-radius: 50px;
+  position: relative;
+}
+
+.videotitle{
+  
+  margin-top: 0px;
+  margin-top: 3px;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 20px;
+  margin-bottom: 10px;
+  text-decoration: none;
+  color: black;
+  font-family: 'roboto';
+}
+.thumbnailrow{
+  margin-bottom: 10px;
+}
+.video-aurthor{
+  font-size: 12px;
+  color: rgb(96, 96, 96);
+  margin-bottom: 5px;
+}
+.Video-stats{
+  font-size: 12px;
+  color: rgb(96, 96, 96);
+  margin-bottom: 1px;
+  margin-top: 0px;
+} 
+
+.profilepicturetooltip{
+  position: absolute;
+  display: flex;
+  width: 240px;
+  height: 80px;
+  background-color: white;
+  align-items: center;
+  border-radius: 6px;
+  z-index: 1;
+  box-shadow: 0px 1px 7px rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: opacity 0.16s;
+  pointer-events: none;
+}
+.profilepicturetooltip img{
+  width: 50px;
+  border-radius: 50px;
+}
+.profilepicturediv{
+  flex: 0.3;
+  padding-left: 10px;
+}
+.profilepicturetooltipinfo{
+  flex: 1;
+  padding-left: 10px;
+}
+.profilepicturespan:hover {
+  cursor: pointer;
+}
+.profilepicturespan:hover .profilepicturetooltip{
+  opacity: 1;
+}
+.tooltipchannelname{
+  margin-bottom: 4px;
+  font-weight: bold;
+  font-size: 17px;
+}
+
+
+

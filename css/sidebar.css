@@ -1,0 +1,76 @@
+.sidebar{
+    position: fixed;
+    top: 60px;
+    bottom: 0;
+    left: 0;
+    width: 77px;
+    background-color: white;
+   z-index: 1;
+}
+.home-button{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 60px;
+    align-items: center;
+    font-size: 10px;
+}
+.home-button:hover{
+    background-color: rgb(201, 201, 201);
+    cursor: pointer;
+}
+.icon{
+   height: 24px;
+   margin-bottom: 5px;
+   margin-top: 10px;
+}
+
+
+.notification-icon-number{
+    position: relative;
+    
+}
+
+.notification-icon-number p{
+    background-color: red;
+    color: white;
+    border-radius: 30px;
+    text-align: center;
+    position: absolute;
+    top: 4px;
+    right: 4px;
+}
+
+@media (min-width: 1050px){
+
+  
+.sidebar{
+    width: 200px;
+    transition: width 0.15s;
+
+}
+
+body{
+    padding-left: 230px;
+}
+
+.home-button{
+    flex-direction: row;
+    justify-content: left;
+    padding-left: 20px;
+}
+.icon-name{
+    padding-left: 10px;
+    justify-content: center;
+    font-size: 15px;
+}
+
+.icon{
+    height: 26px;
+   justify-content: center;
+   margin: 0;
+ }
+ 
+
+
+}
